@@ -13,47 +13,116 @@
         <div id="header">
             Здесь header
         </div>
+        <script>
+            var arr = [1, -1, 2, -2, 3];
 
-        <!-- <div id="content">
-            <div class="right">text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>
-            </div>
-            <div class="left">
-                text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text</div>
-            <div class="center">
-                text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br>text<br></div>
-            <div class="limiter"></div>
-        </div>
-        <div id="footer"> hear footer </div> -->
+            var positiveArr = arr.filter(function (number) {
+                return number > 0;
+            });
+
+            alert(positiveArr); // 1,2,3
+
+            var names = ['HTML', 'CSS', 'JavaScript'];
+
+            var nameLengths = names.map(function (name) {
+                return name.length;
+            });
+
+
+
+            function isPositive(number) {
+                return number > 0;
+            }
+
+            alert(arr.every(isPositive)); // false, не все положительные
+            alert(arr.some(isPositive)); // true, есть хоть одно положительное
+
+            // получили массив с длинами
+            alert(nameLengths); // 4,3,10
+
+            let quest = confirm("Are you right")
+
+            if (quest) alert ("wooooy")
+            else alert ("baaaad")
+        </script>
 
         <section>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim? Quis, dolor?
-                Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque amet nesciunt veritatis iste!
-                At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos tempore neque quam, iure
+                    corrupti suscipit laborum id rerum quos consectetur aperiam, hic nihil quidem voluptatum nemo enim?
+                    Quis, dolor?
+                    Perferendis maxime eligendi reiciendis, laudantium eum voluptas debitis error quasi architecto
+                    corrupti optio aliquam quod dolor et sed similique ea. Repellendus vero ea explicabo autem atque
+                    amet nesciunt veritatis iste!
+                    At placeat, excepturi quas amet, aperiam quod asperiores ut aut quidem eaque odit voluptatem
+                    blanditiis, alias ratione cupiditate. Possimus incidunt inventore ipsam eaque? Voluptatem doloremque
+                    accusantium, unde tempore soluta eveniet.</p>
             </article>
-          </section>
-          <footer>FOOTER</footer>
+        </section>
+        <footer>FOOTER</footer>
 
     </div>
 </body>
