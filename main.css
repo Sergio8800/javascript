@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+#sidebar,
+#content {
+    position: absolute;
+}
+
+#sidebar,
+#content {
+    overflow: auto;
+    padding: 10px;
+}
+
+#header {
+    height: 80px;
+    /* Высота слоя */
+    background: #FEDFC0;
+    border-bottom: 2px solid #7B5427;
+    left: 82px;
+    top: 0;
+}
+
+#header h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#sidebar {
+    width: 150px;
+    background: #11111135;
+    border-right: 1px solid #231F20;
+    top: 82px;
+    /* Расстояние от верхнего края */
+    bottom: 180px;
+    /* Расстояние снизу  */
+}
+
+#sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+#content {
+    top: 82px;
+    /* Расстояние от верхнего края */
+    left: 170px;
+    /* Расстояние от левого края */
+    bottom: 80px;
+    right: 150px;
+}
+
+#im_woman {
+    height: 80px;
+    width: 80px;
+    float: left;
+    padding-left: 1px;
+    /* Отступ слева */
+    padding-bottom: 1px;
+    /* Отступ снизу */
+}
+
+.sidenav {
+    /* height: 100%; */
+    width: 149px;
+    position: fixed;
+    z-index: 1;
+    top: 82px;
+    bottom: 182px;
+    right: 0;
+    background-color: #11111135;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 180px;
+    width: 100%;
+    background: #7B5427;
+}
